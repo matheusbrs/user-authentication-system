@@ -1,0 +1,212 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Pagina inicial*/
+
+.principal{
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+    
+.imgIndex img{
+    width: 820px;
+}
+
+.bntIndex{
+    margin-left: 20px;
+    
+}
+.loginIndex :hover{
+    background-color:#4f9ae5 ;
+}
+
+.bntIndex button {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+.bnts a{
+    color: black;
+}
+
+.bnts :hover{
+    color: white;
+}
+
+.icon{
+    color: white;
+}
+
+.sobre h2{
+    margin-bottom:15px;
+    font-size:30px;
+}
+
+.sobre{
+    max-width:900px;
+    margin:0 auto;
+    margin:0 auto;
+
+    margin-top:40px;   
+}
+
+.midia{
+    color:#4f9ae5;
+}
+
+.caixa{
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 10%;
+}
+
+.caixinhas{
+    border: solid 1px black;
+    width: 20%;
+    height: 140px;
+    border-radius: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixinhas a{
+    color: black;
+}.caixinhas a:hover{
+    color: white;
+    transition: 1.5s;
+}
+.caixinhas:hover{
+    background-color: #4f9ae5;
+    transition: 1s;
+    
+}
+.comunicacao{
+    width: 48px; 
+    height: 48px;
+    
+}
+/*Pagina de Cadastro*/
+
+.logo{
+    width: 180px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+header{
+  display: flex;
+  background-color: rgb(0, 0, 0);
+}
+
+.links{
+    display: flex; 
+    align-items: center; 
+   list-style: none;
+   font-weight: bold;
+}
+
+.links a:hover{
+    color: rgb(169, 169, 172);
+}
+
+.links, li{
+    margin-left: 20px;
+    text-decoration:none;
+}
+
+.links, li, a{
+   color: white;
+   text-decoration: none;
+   
+}
+
+.cabecalho{
+ justify-content: space-around;
+ align-items: center;
+}
+
+h1{
+    margin-top: 40px;
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin-top:20px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+form , label{
+    text-align: center
+}
+input{
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px 30px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button{
+    margin: 0 auto;
+    width: 120px;
+    margin-top:10px;
+    padding: 10px;
+    border-radius:10px 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: green;
+    color: white;
+    transition: 0.8s;
+}
+
+
+/*Pagina de login*/
+
+.iconHome{
+    font-size: 220px;
+}
+
+.blue{
+    color: #4f9ae5;
+}
+
+.buttonLogin{
+    width: 90px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonLogin:hover{
+    background-color: #4f9ae5;
+}
