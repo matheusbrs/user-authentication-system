@@ -198,7 +198,7 @@ button:hover{
     color: #4f9ae5;
 }
 
-.buttonLogin{
+#buttonLogin{
     width: 90px;
     font-size: 15px;
     font-weight: bold;
@@ -207,6 +207,34 @@ button:hover{
     justify-content: space-between;
 }
 
-.buttonLogin:hover{
+#buttonLogin:hover{
     background-color: #4f9ae5;
+}
+
+#mensagemErroLogin, #mensagemErroPassword{
+    background-color: red;
+    max-width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    display: none;
+}
+
+/*Pagina de adm*/
+.tabela{
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+}
+.tabela td{
+  padding: 10px;
+}
+
+.editar{
+    color: blue;
+}
+
+.apagar{
+    color: red;
 }

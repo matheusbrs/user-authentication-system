@@ -19,6 +19,7 @@
             <ul class="links">
                 <li><a href="#sobre">SOBRE NÓS</a></li>
                 <li><a href="#contatos">CONTATO</a></li>
+                <li><a href="adm.php">ADM</a></li>
 
             </ul>
         </div>
