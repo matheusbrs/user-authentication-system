@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
+    
     <title>Cadastro</title>
 </head>
 
@@ -26,23 +28,30 @@
         </div>
     </header>
 
-    <form action="" method="post">
-        <h1>Cadastro</h1>
+    <form id="formCadastro" action="" method="post">
+        <h1>Criar conta</h1>
         <label>Nome:</label>
-        <input type="text" name="nome" placeholder="Nome">
+        <input type="text" id="nome" name="nome" placeholder="Nome">
+        <p class="mensagemErroCadastro notification is-warning">Digite nome</p>
         <label>Sobrenome:</label>
-        <input type="text" name="sobreNome" placeholder="Sobrenome">
+        <input type="text" id="sobreNome" name="sobreNome" placeholder="Sobrenome">
+        <p class="mensagemErroCadastro notification is-warning">Digite seu sobre nome</p>
         <label>Senha:</label>
-        <input type="password" name="senha" placeholder="Senha">
+        <input type="password" id="senhaCadastro" name="senha" placeholder="Senha">
+        <p class="mensagemErroCadastro notification is-warning">Favor Crie uma senha com no minimo 8 caracteristicas</p>
         <label>E-mail:</label>
-        <input type="e-mail" name="email" placeholder="E-mail">
+        <input type="e-mail" id="email" name="email" placeholder="E-mail">
+        <p class="mensagemErroCadastro notification is-warning">Favor digite um E-mail valido</p>
         <label>Nascimento:</label>
-        <input type="text" name="nascimento" placeholder="Nascimento">
+        <input type="text" id="nascimento" name="nascimento" placeholder="Nascimento">
+        <p class="mensagemErroCadastro notification is-warning">Digite sua data de nascimento</p>
         <label>Telefone:</label>
-        <input type="tel" name="telefone" placeholder="Telefone">
+        <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+        <p class="mensagemErroCadastro notification is-warning">Digite um número de telefone valido</p>
         <label for="">CPF:</label>
-        <input type="text" name="cpf" placeholder="Cpf">
-        <button type="submit">Cadastrar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+        <input type="text" id="cpfCadastro" name="cpf" placeholder="Cpf">
+        <p class="mensagemErroCadastro notification is-warning">Digite um CPF valido</p>
+        <button type="submit" id="bntCadastro">Cadastrar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
                 <path
                     d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
@@ -50,6 +59,8 @@
                     d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
             </svg></button>
     </form>
+
+<script src="script.js"></script>
 
 </body>
 

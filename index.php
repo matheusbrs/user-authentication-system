@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="cabecalho container">
+    <header class="cabecalho">
         <div>
             <img class="logo" src="imagens/logoMenu.png" alt="">
         </div>
@@ -19,7 +19,7 @@
             <ul class="links">
                 <li><a href="#sobre">SOBRE NÓS</a></li>
                 <li><a href="#contatos">CONTATO</a></li>
-                <li><a href="adm.php">ADM</a></li>
+                <li><a href="admLogin.php">ADM</a></li>
 
             </ul>
         </div>

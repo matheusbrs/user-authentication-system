@@ -4,16 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
->
+   
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
 
 <body>
-    <header class="cabecalho container">
+    <header class="cabecalho">
         <div>
             <img class="logo" src="imagens/logoMenu.png" alt="">
         </div>
@@ -33,10 +30,10 @@
         <h1>Login</h1>
         <label>CPF:</label>
         <input type="text" id="cpfLogin" name="cpfLogin" placeholder="Cpf">
-        <p id="mensagemErroLogin">Por favor, preencha o campo!</p>
+        <p class="mensagemErroLogin">Por favor, preencha o campo!</p>
         <label>Senha:</label>
         <input type="password" id="senhaLogin" name="senhaLogin" placeholder="Senha">
-        <p id="mensagemErroPassword">Por favor, preencha o campo senha!</p>
+        <p class="mensagemErroLogin">Por favor, preencha o campo senha!</p>
         <button id="buttonLogin" type="submit">Login <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"

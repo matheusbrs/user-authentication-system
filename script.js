@@ -1,23 +1,49 @@
-const form = document.querySelector('form');
-const cpfLogin = document.getElementById('cpfLogin');
-const senhaLogin = document.getElementById('senhaLogin');
-const erroCpf = document.getElementById('mensagemErroLogin');
-const erroSenha = document.getElementById('mensagemErroPassword');
+document.addEventListener('DOMContentLoaded', () => {
+    erroMessagemLogin();
+    erroMensagemCadastro();
+    
+})
 
-form.addEventListener('submit', function(event) {
-    let temErro = false;
+function erroMessagemLogin() {
+    const form = document.querySelector('form');
+    const msgLogin = document.querySelectorAll('.mensagemErroLogin');
+    const inputLogin = form.querySelectorAll('input');
 
-    if (cpfLogin.value.trim() === '') {
-        erroCpf.style.display = 'block';
-        temErro = true;
-    }
+    form.addEventListener('submit', (event) => {
+        let temErro = false;
+        inputLogin.forEach((input, index) => {
+            if (input.value.trim() === '') {
+                msgLogin[index].style.display = 'block';
+                temErro = true;
+            } else {
+                msgLogin[index].style.display = 'none';
+            }
+        });
+        if (temErro) {
+            event.preventDefault();
+        }
+    })
+}
+function erroMensagemCadastro() {
 
-    if (senhaLogin.value.trim() === '') {
-        erroSenha.style.display = 'block';
-        temErro = true;
-    }
+    const formCadastro = document.getElementById('formCadastro');
+    const inputs = formCadastro.querySelectorAll('input');
+    const erroMsg = document.querySelectorAll('.mensagemErroCadastro');
 
-    if (temErro) {
-        event.preventDefault();
-    }
-});
+    formCadastro.addEventListener('submit', (event) => {
+        let temErro = false;
+        inputs.forEach((input, index) => {
+            if (input.value.trim() === '') {
+                erroMsg[index].style.display = 'block'
+                temErro = true;
+            } else {
+                erroMsg[index].style.display = 'none'
+            }
+        })
+        if (temErro) {
+            event.preventDefault();
+        }
+    })
+
+};
+

@@ -96,6 +96,15 @@
 }
 /*Pagina de Cadastro*/
 
+.mensagemErroCadastro{
+    background-color: red;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    display: none;
+}
+
 .logo{
     width: 180px;
     height: 60px;
@@ -211,7 +220,7 @@ button:hover{
     background-color: #4f9ae5;
 }
 
-#mensagemErroLogin, #mensagemErroPassword{
+.mensagemErroLogin{
     background-color: red;
     max-width: 50%;
     margin: 0 auto;
@@ -237,4 +246,14 @@ button:hover{
 
 .apagar{
     color: red;
+}
+
+.mensagemErroAdm{
+    background-color: red;
+    max-width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    display: none;
 }

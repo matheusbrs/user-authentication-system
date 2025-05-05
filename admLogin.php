@@ -23,12 +23,14 @@
             </ul>
         </div>
     </header>
-    <form action="" method="post">
+    <form id="formAdm" action="" method="post">
         <h1>Acesso do adiministrador</h1>
         <label>ADM:</label>
         <input type="text" name="ADM" placeholder="ADM">
+        <p class="mensagemErroAdm">Digite seu usuario</p>
         <label>Senha:</label>
         <input type="password" name="senhaLogin" placeholder="Senha">
+        <p class="mensagemErroAdm">Digite sua senha</p>
         <button class="buttonLogin" type="submit">Login <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -36,8 +38,10 @@
                 <path fill-rule="evenodd"
                     d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
             </svg></button>
-
     </form>
+
+<script src="scriptadm.js"></script>
+
 </body>
 
 </html>
